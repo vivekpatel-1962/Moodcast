@@ -29,7 +29,6 @@ Moodcast is a **full-stack music streaming platform** that empowers users to dis
 
 1. **Clone the repository.**
 
-<<<<<<< HEAD
 2. **Set up Clerk authentication:**
    - Create a Clerk app at [https://dashboard.clerk.com](https://dashboard.clerk.com).
    - Copy your Publishable Key and add it to `client/.env.local`:
@@ -87,28 +86,3 @@ Feel free to submit a pull request or open an issue for suggestions and improvem
 ---
 
 Happy listening & coding! 🎵🚀
-=======
-## Environment & YouTube Setup
-1. Create a file `server/.env` and add:
-```env
-YOUTUBE_API_KEY=YOUR_YOUTUBE_DATA_API_V3_KEY
-```
-2. Restart the dev server after changing `.env`.
-
-### Test the YouTube proxy
-- With the server running on port 4000, try:
-```bash
-curl "http://localhost:4000/api/yt/search?q=lofi%20hip%20hop"
-```
-- Expected: JSON with an `items` array. If you get `500 {"error":"YOUTUBE_API_KEY not set on server"}`, set the env var. If you get `502 {"error":"YouTube request failed"}`, check the server console for detailed status/body (invalid key, quota, etc.).
-
-### Troubleshooting
-- 500 YOUTUBE_API_KEY not set: Ensure `.env` contains the key and the server restarted.
-- 403/400 from YouTube: Key invalid or quota exceeded. Inspect server logs for `status` and `body` (improved logging is in place) and verify key/quotas in Google Cloud Console.
-- Network/timeouts: Verify internet access and that port 4000 is reachable from the client (Vite proxy is configured in `client/vite.config.js`).
-
-## Auth routes
-- Sign in: `/sign-in`
-- Sign up: `/sign-up`
-- Protected routes: `/rooms`, `/rooms/:id`, `/player`, `/library`, `/settings`
->>>>>>> 001db00 (Update recommender training and README; remove old presentation)
