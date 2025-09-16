@@ -2,6 +2,7 @@
 
 Moodcast is a **full-stack music streaming platform** that empowers users to discover, share, and listen to music collaboratively. It features real-time music rooms, recommendations powered by ML, YouTube integration, and a sleek, responsive UI.
 
+
 ## ✨ Unique Features
 
 - **Real-Time Music Rooms**: Create and join rooms with collaborative song queues, voting, and live chat powered by Socket.IO.
@@ -67,7 +68,6 @@ Moodcast is a **full-stack music streaming platform** that empowers users to dis
 
 ---
 
-
 ## 📚 API Endpoints
 
 - `GET /api/recommendations` – Get music recommendations
@@ -79,6 +79,16 @@ Moodcast is a **full-stack music streaming platform** that empowers users to dis
 - `GET /api/songs/:id/lyrics` – Get song lyrics
 - `GET /api/yt/search?q=QUERY` – YouTube search
 
+## 🎨 Screenshots
+
+<p align="center">
+  <img src="client/src/photos/Screenshot 2025-09-16 183706.png" alt="Moodcast Homepage" width="700"/>
+  <br/>
+  <img src="client/src/photos/Screenshot 2025-09-16 183801.png" alt="Music Room UI" width="700"/>
+  <br/>
+   <img src="client/src/photos/Screenshot 2025-09-16 183529.png" alt="Room" width="700"/>
+   <br/>
+</p>
 ## 🤝 Contributing
 
 Feel free to submit a pull request or open an issue for suggestions and improvements.
